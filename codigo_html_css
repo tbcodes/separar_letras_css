@@ -1,0 +1,58 @@
+<!-- Código HTML -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<title>Truzz Blogg - Modificando el espacio del texto/palabras en CSS</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Para usar una fuente de Google fonts, simplemente copiamos su enlace en el head (2 fuentes: Lobster|Nunito)-->
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+</head>
+<body>
+
+	<h1>Trucos con CSS</h1>	
+	<h2>Modifica el <span class="tb">espacio</span> entre las letras y el espacio que existe entre las palabras</h2>
+	<p class="letras">Los que desean aprender un poco más de CSS, encontrarán en este vídeo, un interesante truco de CSS que nos permite aumentar el espaciado existente entre una palabra. También veremos como aumentar el espacio entre las palabras. </p>
+
+	<p>No te olvides suscribirte a nuestro canal <span class="tb">TRUZZ BLOGG</span>, para recibir los nuevos vídeos que vayamos publicando.</p>
+	
+</body>
+</html>
+
+
+/* Código CSS */
+
+/*Esta es la hoja de estilos donde definimos las características de nuestro CSS*/
+
+
+.letras {
+	width: 1000px;
+	padding: 20px;
+	margin: 0 auto;
+	font-family: 'Nunito', cursive;
+	font-size: 1.2em;
+	letter-spacing: 8px;
+	
+
+}
+
+.segundo {
+	word-spacing: 20px;
+
+}
+
+.tb {
+	letter-spacing: -3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+.tb:hover {
+	letter-spacing: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
